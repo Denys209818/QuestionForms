@@ -27,6 +27,7 @@ namespace Hospital.WindowsForm
         {
             this.lblAllQuest.Text += " " + MaxQuest;
             this.lblTrueQuest.Text += " " + TrueQuest;
+            this.lblMark.Text += " " + Mark;
         }
 
         private void btnSave_Click(object sender, EventArgs e)

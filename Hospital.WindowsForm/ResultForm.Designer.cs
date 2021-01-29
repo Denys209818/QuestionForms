@@ -33,6 +33,8 @@ namespace Hospital.WindowsForm
             this.lblAllQuest = new System.Windows.Forms.Label();
             this.lblTrueQuest = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
+            this.lblMark = new System.Windows.Forms.Label();
+            this.lblDesc = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblMain
@@ -51,7 +53,7 @@ namespace Hospital.WindowsForm
             this.lblAllQuest.AutoSize = true;
             this.lblAllQuest.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.lblAllQuest.ForeColor = System.Drawing.Color.Green;
-            this.lblAllQuest.Location = new System.Drawing.Point(103, 165);
+            this.lblAllQuest.Location = new System.Drawing.Point(103, 133);
             this.lblAllQuest.Name = "lblAllQuest";
             this.lblAllQuest.Size = new System.Drawing.Size(228, 31);
             this.lblAllQuest.TabIndex = 0;
@@ -62,7 +64,7 @@ namespace Hospital.WindowsForm
             this.lblTrueQuest.AutoSize = true;
             this.lblTrueQuest.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.lblTrueQuest.ForeColor = System.Drawing.Color.Green;
-            this.lblTrueQuest.Location = new System.Drawing.Point(103, 236);
+            this.lblTrueQuest.Location = new System.Drawing.Point(103, 194);
             this.lblTrueQuest.Name = "lblTrueQuest";
             this.lblTrueQuest.Size = new System.Drawing.Size(296, 31);
             this.lblTrueQuest.TabIndex = 0;
@@ -79,12 +81,35 @@ namespace Hospital.WindowsForm
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // lblMark
+            // 
+            this.lblMark.AutoSize = true;
+            this.lblMark.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.lblMark.ForeColor = System.Drawing.Color.Green;
+            this.lblMark.Location = new System.Drawing.Point(103, 250);
+            this.lblMark.Name = "lblMark";
+            this.lblMark.Size = new System.Drawing.Size(175, 31);
+            this.lblMark.TabIndex = 0;
+            this.lblMark.Text = "Ваша оцінка:";
+            // 
+            // lblDesc
+            // 
+            this.lblDesc.AutoSize = true;
+            this.lblDesc.ForeColor = System.Drawing.Color.Blue;
+            this.lblDesc.Location = new System.Drawing.Point(103, 281);
+            this.lblDesc.Name = "lblDesc";
+            this.lblDesc.Size = new System.Drawing.Size(183, 20);
+            this.lblDesc.TabIndex = 2;
+            this.lblDesc.Text = "(за 12-бальною шкалою)";
+            // 
             // ResultForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(586, 413);
+            this.Controls.Add(this.lblDesc);
             this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.lblMark);
             this.Controls.Add(this.lblTrueQuest);
             this.Controls.Add(this.lblAllQuest);
             this.Controls.Add(this.lblMain);
@@ -103,5 +128,7 @@ namespace Hospital.WindowsForm
         private System.Windows.Forms.Label lblAllQuest;
         private System.Windows.Forms.Label lblTrueQuest;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Label lblMark;
+        private System.Windows.Forms.Label lblDesc;
     }
 }
